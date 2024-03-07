@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    color:black;
+    font-family:Montserrat;
+}
+
+body{
+    background-color:#ffffff;
+    display:flex;
+}
+.img-bar{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    overflow:hidden;
+    border:2px solid white;
+    flex-shrink: 0;
+}
+.profile{
+    display:flex;
+    padding-bottom:10px;
+    gap:30px;
+    align-items: center;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+    color:white;
+}
+.img-bar img {
+    width:100%;
+}
+
+
+.menu{
+    background-color:#15F5BA;
+    width:60px;
+    height:100vh;
+    padding:10px;
+    overflow:hidden;
+    transition: .5s;
+}
+.menu:hover{
+    width:260px;
+}
+ul{
+   
+    list-style:none;
+    position: relative;
+    height:95%;
+    
+    
+}
+
+ul li a{
+   
+    display:block;
+    text-decoration:none;
+    padding:10px;
+    margin:10px 0px;
+    border-radius:8px;
+    align-items:center;
+    gap:24px;
+    display:flex;
+    transition:.5s;
+    
+ 
+    
+}
+ul h3{
+    color:white;
+    font-size: 16px;
+    
+}
+ul li a:hover, .active{
+    background-color:#ffffff55;
+}
+.logout{
+    position:absolute;
+    bottom:0;
+    width:100%;
+   
+}
+
+ul li i{
+    font-size:30px;
+    text-align:center;
+    color:white;
+}
+
+/*content*/
+.content{
+    width:100%;
+}
+.title{
+    display:flex;
+    background-color:#ffffff;
+    text-align: center;
+    justify-content: space-between;
+    margin:10px;
+    padding:10px;
+    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+}
+.title p{
+    color:black;
+}
+.title i {
+    color:#15F5BA;
+    font-size:24px;
+}
+.data-info{
+    display:flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:10px;
+    margin:5px;
+}
+.data-info .box{
+    display:flex;
+    background-color:white;
+    height:150px;
+    flex-basis: 150px;
+    flex-grow:1;
+    box-shadow: 1px 1px 1.5px 1px rgb(0 0 0 / 20%);
+    border-radius: 8px;
+    align-items:center;
+    justify-content: space-around;
+    margin:5px;
+    transition: .5s;
+
+}
+.data-info .box i{
+    font-size:40px;
+    color:#15F5BA;
+}
+.data-info .box .data{
+    text-align: center;
+  
+}
+.data-info .box .data span{
+    font-size: 30px;
+    color:#15F5BA;
+   
+}
+table{
+    width:100%;
+    text-align:center;
+    border-spacing: 10px;
+    margin:5px 0px;
+
+}
+th,td{
+    background-color:white;
+    box-shadow: 1px 1px 1.5px 1px rgb(0 0 0 / 20%);
+    height:40px;
+    border-radius: 8px;
+}
+th{
+    background-color:#15F5BA;
+    color:white;
+    font-size:16px;
+    text-transform: capitalize;
+
+    
+}
+tr td:hover, .box:hover{
+    background-color:rgb(0 0 0 / 10%);
+}
+.box:hover p{
+    color:#ffffff;
+}
+.price{
+    color:red;
+}
